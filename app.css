@@ -1,0 +1,128 @@
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.bigContainer {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    border-radius: 2%;
+}
+.content {
+    padding: 20%;
+    height: fit-content;
+}
+
+.container1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+.container2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.container3 {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.heading {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 35%;
+}
+
+.sedanButton {
+    background-color: white;
+    color: hsl(31, 77%, 52%);
+    border-radius: 40px;
+    border: none;
+    padding: 8% 16%;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 1px solid white;
+    margin-top: 3%;
+}
+
+.sedanButton:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    cursor: pointer;
+}
+
+.suvButton {
+    background-color: white;
+    color: hsl(184, 100%, 22%);
+    border-radius: 40px;
+    border: none;
+    padding: 8% 16%;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 1px solid white;
+}
+
+.suvButton:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    cursor: pointer;
+}
+
+.luxuryButton {
+    background-color: white;
+    color: hsl(179, 100%, 13%);
+    border-radius: 40px;
+    border: none;
+    padding: 8% 16%;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 1px solid white;
+}
+
+.luxuryButton:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 695px) {
+    .bigContainer {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        border-radius: 2%;
+        max-height: 1000px;
+    }
+    .container1 {
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+        border-bottom-left-radius: 0;
+    }
+    .container3 {
+        background-color: hsl(179, 100%, 13%);
+        border-bottom-left-radius: 2%;
+        border-bottom-right-radius: 2%;
+        border-top-right-radius: 0;
+    }
+}
